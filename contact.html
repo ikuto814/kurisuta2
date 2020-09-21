@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="XDファイルコーディング(クリスタ中級)">
+    <title>クリスタ中級</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+<header class="header">
+<div class="container">
+<div class="header_inner">
+    <h1 class="site_title">Cresta  Design</h1>
+    <nav class="header_nav gnav">
+        <ul class="nav_list"> 
+            <li class="nav_item"><a href="index.html#concept">Concept</a></li>
+            <li class="nav_item"><a href="index.html#service">Service</a></li>
+            <li class="nav_item"><a href="index.html#works">Works</a></li>
+            <li class="nav_item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="burger_btn">
+        <span class="bar bar_top"></span>
+        <span class="bar bar_mid"></span>
+        <span class="bar bar_bottom"></span>
+    </button>
+    </div>
+</div>
+</header>
+
+<main>
+    <div class="fv_contact">
+        <h2 class="contact_copy">contact</h2>
+    </div>
+
+    <div class="contact_form_container">
+    <p class="contact_form_text">お問い合わせ内容</p>
+    <form name="contact_form_checkbox" class="contact_form_checkbox">
+        <label class="contact_form_checkbox_item">
+        <input type="checkbox" value="r1" name="r1">資料請求
+        </label>
+        <label class="contact_form_checkbox_item">
+        <input type="checkbox" value="r2" name="r1">お電話でのご相談を希望
+        </label>
+        <label class="contact_form_checkbox_item">
+        <input type="checkbox" value="r3" name="r1">申し込み
+        </label>
+    </form>
+    </div>
+<form action="#" method="POST" class="contact_form">
+    <div class="form_group">
+        <label for="name" class="form_label">担当者名</label>
+        <input  type="text" class="form_control"  id="name" name="name" tabindex="1" required>
+    </div>
+    <div class="form_group">
+        <label for="tell" class="form_label">電話番号</label>
+        <input type="tell" class="form_control" id="tell" name="tell" tabindex="2" required>
+    </div>
+    <div class="form_group">
+        <label for="email" class="form_label">メールアドレス</label>
+        <input type="email" class="form_control" id="email" name="email" tabindex="3" required>
+    </div>
+    <div class="form_group">
+        <label for="message" class="form_label">その他</label>
+        <textarea id="message" name="message" tabindex="4"></textarea>
+    </div>
+</form>
+<button type="submit" class="link_btn">Submit</button>
+
+</main>
+
+<footer class="footer">
+    <small>&copy;cresta.design all rights reserved</small>
+</footer>
+</div>
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
